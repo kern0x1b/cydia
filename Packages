@@ -1,20 +1,23 @@
-Package: space.kern0x1b.expectfix
-Version: 1.0.0
+Package: space.kern0x1b.kindlesyncfix
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: kern0x1b
 Depends: mobilesubstrate
-Filename: debs/space.kern0x1b.expectfix_1.0.0_iphoneos-arm.deb
-Size: 3608
-MD5sum: b2bdc3f7496c917693beddf322f3e992
-SHA1: fc87fbc46c2bdd947c71d0972b5d7a16b2463bec
-SHA256: 8832610e1c2777458e31052cf4fd65391c74a793c1070028fbec23601d4a6c61
+Conflicts: space.kern0x1b.expectfix
+Replaces: space.kern0x1b.expectfix
+Provides: space.kern0x1b.expectfix
+Filename: debs/space.kern0x1b.kindlesyncfix_1.0.1_iphoneos-arm.deb
+Size: 3654
+MD5sum: 2e1d2246acb76f203cf98ee95b47e340
+SHA1: 269401d1663c39e44dec7bafdd6a4d9e5deff51d
+SHA256: 9c015d6471dcc8efb03b31f8b92482118a787e48852336e78399115fa920402a
 Section: Tweaks
 Homepage: https://github.com/kern0x1b/kindle-sync-fix
 Description: Amazon's Whispersync backend (cde-ta-g7g.amazon.com) now rejects a malformed empty "Expect" HTTP header that old CFNetwork attaches to Kindle app sync requests on iOS 6, returning "417 Expectation Failed" and breaking "Sync to Furthest Page". This tweak hooks -[NSMutableURLRequest setValue:forHTTPHeaderField:] inside the Kindle app only, and drops the header when its value is empty, restoring sync.
 Tag: purpose::extension
 Author: kern0x1b
-Depiction: https://kern0x1b.github.io/cydia/depictions/expectfix.html
-Icon: https://kern0x1b.github.io/cydia/icons/expectfix.png
+Depiction: https://kern0x1b.github.io/cydia/depictions/kindlesyncfix.html
+Icon: https://kern0x1b.github.io/cydia/icons/kindlesyncfix.png
 Name: Kindle Whispersync Fix
 
 Package: space.kern0x1b.soundcloudfix

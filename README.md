@@ -21,7 +21,7 @@ https://kern0x1b.github.io/cydia/
 
 | Package | Source repo | Fixes |
 |---|---|---|
-| `space.kern0x1b.expectfix` — Kindle Whispersync Fix | [kindle-sync-fix](https://github.com/kern0x1b/kindle-sync-fix) | Amazon Kindle app sync failing with 417 Expectation Failed |
+| `space.kern0x1b.kindlesyncfix` — Kindle Whispersync Fix | [kindle-sync-fix](https://github.com/kern0x1b/kindle-sync-fix) | Amazon Kindle app sync failing with 417 Expectation Failed |
 | `space.kern0x1b.soundcloudfix` — SoundCloud iOS 6 Fix | [soundcloud-fix](https://github.com/kern0x1b/soundcloud-fix) (private) | SoundCloud 2.7.2 broken by the v1 API deprecation and dead password OAuth grant |
 
 ## Repo layout
@@ -31,9 +31,11 @@ publish.sh               rebuilds every index below from debs/
 Packages                 dpkg-scanpackages index over debs/
 Packages.gz/.bz2         the same index, compressed — clients fetch these
 Release                  repo metadata + checksums of the three index files
-CydiaIcon.png            repo icon
+CydiaIcon.png            repo icon — must be exactly this name, 64x64, at the root
+assets/                  full-size source artwork the small icons are scaled from
 debs/                    built .deb files
 depictions/              per-package pages Cydia shows instead of plain text
+icons/                   per-package icons, one per package, served over HTTP
 ```
 
 Old Cydia asks for `Packages.bz2` first, then `.gz`, then plain, so all three

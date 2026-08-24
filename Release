@@ -7,14 +7,14 @@ Architectures: iphoneos-arm
 Components: main
 Description: MobileSubstrate tweaks for jailbroken legacy iOS devices (iOS 6+), fixing compatibility issues with modern backends.
 MD5Sum:
- f055be2b23f4e6774b712d58ee8119a7 3036 Packages
- 0c513c01bd7f5f497205d80144893c98 1245 Packages.gz
- 05a0a8caa0ad519ea456787bff372814 1435 Packages.bz2
+ e9983a231fe1754d20dfdd620133ebc0 3158 Packages
+ 65416bd073a25a1a3d9ccb6ec9528ac6 1286 Packages.gz
+ a22ec244f94bba807792c69924fc937f 1490 Packages.bz2
 SHA1:
- 25fd6c5edbf3d77c81f845ea4a08ea450d46f634 3036 Packages
- 6c0336ae9909d04225318fe738dab1d8843cd44c 1245 Packages.gz
- a58005bab4ce7befcb3ecc5d23a84cac8450ade2 1435 Packages.bz2
+ aba2999790beb17e6ace68563169f09520ebc301 3158 Packages
+ 14f71e30795184ff7f531fa4ed64731d1398c09d 1286 Packages.gz
+ 0b9c84c22233b6aff70ef8008930b71818b518b3 1490 Packages.bz2
 SHA256:
- 02588ce83a3e9d32e9e22c0b0b4466aea31a7fa0f5821b51d94ca68d82bca9de 3036 Packages
- 42519b830ee91912831f0997cb2dbad904f3bfb7e9b903a6642092b514d4b4e0 1245 Packages.gz
- f493f0589ff29ac280bc74bf0744dde5e2b2059c5ee648510a592d618842eecc 1435 Packages.bz2
+ ae5ac736de3408a00561774e26f9a125e901f2f1714fec928d8cf17ab74676bf 3158 Packages
+ b5b1cab8dd118d37546e690cf1ddf870e4c47715f7e95f0f43e3c85895b8fbee 1286 Packages.gz
+ bc354a294f1c160e6e0f7f3b7fa8f451b0b45ee6f95ffef1956cf9e6a6044f91 1490 Packages.bz2
