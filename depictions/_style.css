@@ -1,0 +1,17 @@
+/* Cydia renders depictions in a small in-app web view on very old WebKit.
+   Keep it to plain CSS: no flexbox, no custom properties, no media queries. */
+body {
+    font: 15px/1.45 -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+    color: #1c1c1e; background: #fff;
+    margin: 0; padding: 14px;
+    -webkit-text-size-adjust: none;
+}
+h1 { font-size: 19px; margin: 0 0 2px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #6d6d72; text-transform: uppercase; letter-spacing: .04em; }
+p  { margin: 0 0 10px; }
+ul { margin: 0 0 10px; padding-left: 20px; }
+li { margin-bottom: 5px; }
+.sub  { color: #8e8e93; margin: 0 0 14px; }
+.meta { border-top: 1px solid #d8d8dc; margin-top: 20px; padding-top: 10px; color: #8e8e93; font-size: 13px; }
+code  { background: #f2f2f7; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
+a { color: #007aff; text-decoration: none; }

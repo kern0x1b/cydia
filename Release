@@ -6,3 +6,15 @@ Codename: legacy-ios
 Architectures: iphoneos-arm
 Components: main
 Description: MobileSubstrate tweaks for jailbroken legacy iOS devices (iOS 6+), fixing compatibility issues with modern backends.
+MD5Sum:
+ 770ef8dc37fbf64e1549e826b840073f 3030 Packages
+ ffefc4f0e10f606000ded4953b756ea7 1234 Packages.gz
+ 6e7347ddcbfd563fe1da2a198fe59beb 1440 Packages.bz2
+SHA1:
+ 47b4d83aecdf413d8ca88c6ec43ba09da2f5cf72 3030 Packages
+ 99c57a10d68edb93eb40cb96ee91fa346d3820d6 1234 Packages.gz
+ 28a110c2b964dca0a93b643d0a021de3b7ba5c3c 1440 Packages.bz2
+SHA256:
+ f514b84fc4801638e98011ea6cce3f21904f3b0da46980fca703063d76e7c1e8 3030 Packages
+ fe5d3d0e388561ed8c7fa10d4d27554d24793f477020406d7343c4ca779d5516 1234 Packages.gz
+ 1f0a1bf682823b8589dbe8ef36c7a6d2f1fc70cc30a0e3ad2d0bd0ad947c3869 1440 Packages.bz2

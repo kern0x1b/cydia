@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoundCloud iOS 6 Fix</title>
+<link rel="stylesheet" href="_style.css">
+</head><body>
+
+<h1>SoundCloud iOS 6 Fix</h1>
+<p class="sub">Restores the official SoundCloud 2.7.2 app on jailbroken iOS 6.</p>
+
+<p>SoundCloud retired its v1 API and the password OAuth grant this old client
+depends on, which broke login, playback, search, feeds and likes/reposts. This
+tweak rewrites the app's v1 calls to the current v2 endpoints and reshapes the
+responses so the app can read them.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Playback, search, feeds and likes/reposts rebuilt against the v2 API.</li>
+  <li>Manual credential entry, since the password OAuth grant is gone.</li>
+  <li>Anti-bot session renewed on the device, no cookie pasting.</li>
+  <li>Endpoint table shipped as JSON next to the tweak, editable on-device
+      without reinstalling: <code>soundcloudfix_api_map.json</code>.</li>
+</ul>
+
+<h2>Requires</h2>
+<ul>
+  <li>Jailbroken iOS with MobileSubstrate.</li>
+  <li>The official SoundCloud app, version 2.7.2.</li>
+  <li>A SoundCloud account — you enter the credentials yourself.</li>
+</ul>
+
+<h2>Tested on</h2>
+<p>iOS 6.1.3 (iPhone 4S). Builds down to iOS 5.0.</p>
+
+<div class="meta">
+  Version 1.1.0 &middot; armv7 &middot; MIT<br>
+  <a href="https://github.com/kern0x1b/soundcloud-fix">github.com/kern0x1b/soundcloud-fix</a>
+</div>
+
+</body></html>

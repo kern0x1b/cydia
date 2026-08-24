@@ -4,14 +4,33 @@ Architecture: iphoneos-arm
 Maintainer: kern0x1b
 Depends: mobilesubstrate
 Filename: debs/space.kern0x1b.expectfix_1.0.0_iphoneos-arm.deb
-Size: 3276
-MD5sum: 6a8596a1d344c9345144caed7ba90c88
-SHA1: 199752bd473f78b2b925eec9d1a5e8313810ce14
-SHA256: f08b265aeb7070edfa02378d650d469c29ca22c37e25699a7080b806315f7db3
+Size: 3612
+MD5sum: f5cc69a1793f74cddda054cb76b49932
+SHA1: aae3886167dbb0aab6e5c10f494e6536ac6ef29c
+SHA256: e232cabb8079e9e7365c5c1efbd382d5654bee64a694631c960005ddd2aaea71
 Section: Tweaks
+Homepage: https://github.com/kern0x1b/kindle-sync-fix
 Description: Amazon's Whispersync backend (cde-ta-g7g.amazon.com) now rejects a malformed empty "Expect" HTTP header that old CFNetwork attaches to Kindle app sync requests on iOS 6, returning "417 Expectation Failed" and breaking "Sync to Furthest Page". This tweak hooks -[NSMutableURLRequest setValue:forHTTPHeaderField:] inside the Kindle app only, and drops the header when its value is empty, restoring sync.
+Tag: purpose::extension
 Author: kern0x1b
+Depiction: https://kern0x1b.github.io/cydia/depictions/expectfix.html
+Icon: https://kern0x1b.github.io/cydia/CydiaIcon.png
 Name: Kindle Whispersync Fix
+
+Package: space.kern0x1b.soundcloudfix
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: kern0x1b
+Depends: mobilesubstrate
+Filename: debs/space.kern0x1b.soundcloudfix_1.0.0_iphoneos-arm.deb
+Size: 37248
+MD5sum: d302dd8eca21926cb9faf23a3072d674
+SHA1: 84d4f29c57dff8fbcf5db142a2d505dfd021dbde
+SHA256: 0edad129053e149ac716299683c80ec6954aef0849ac2cfc63b5a87b9632af77
+Section: Tweaks
+Description: SoundCloud deprecated its v1 API and the password OAuth grant this old client relies on, breaking login, streaming, search, and likes/reposts on iOS 6. This tweak rewrites v1 API calls to the current v2 endpoints, fixes the resulting response/field mismatches, and adds a manual credential entry screen since automated login is no longer possible. Configuration for the endpoint rewrites lives in an external YAML file, editable without reinstalling.
+Author: kern0x1b
+Name: SoundCloud iOS 6 Fix
 
 Package: space.kern0x1b.soundcloudfix
 Version: 1.1.0
@@ -19,12 +38,16 @@ Architecture: iphoneos-arm
 Maintainer: kern0x1b
 Depends: mobilesubstrate
 Filename: debs/space.kern0x1b.soundcloudfix_1.1.0_iphoneos-arm.deb
-Size: 55000
-MD5sum: 4de7a3fc9f746fb088610a77854848ee
-SHA1: 766dfeb46ffc18c6e018fd6a20ac643ea1a85a95
-SHA256: 7dfb07ffbfd702f28c0a784e278358f708c365f6c913f8f83e4e5258e8e287ca
+Size: 55086
+MD5sum: 03ddf29510d277de72eabba346aaf34c
+SHA1: 6c3c4238d6a57f7777858cf11112ac1364efa865
+SHA256: 668ed54655c5c94635138ccd54cebe78a6d30d2487239daf58cf8997c8860487
 Section: Tweaks
+Homepage: https://github.com/kern0x1b/soundcloud-fix
 Description: SoundCloud deprecated its v1 API and the password OAuth grant this old client relies on, breaking login, playback, search, feeds and likes/reposts on iOS 6. This tweak rewrites v1 API calls to the current v2 endpoints, fixes the resulting response/field mismatches, and adds a manual credential entry screen since automated login is no longer possible. The endpoint mapping lives in a JSON file next to the tweak, editable on the device without reinstalling.
+Tag: purpose::extension
 Author: kern0x1b
+Depiction: https://kern0x1b.github.io/cydia/depictions/soundcloudfix.html
+Icon: https://kern0x1b.github.io/cydia/CydiaIcon.png
 Name: SoundCloud iOS 6 Fix
 
