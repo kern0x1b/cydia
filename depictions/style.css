@@ -15,3 +15,12 @@ li { margin-bottom: 5px; }
 .meta { border-top: 1px solid #d8d8dc; margin-top: 20px; padding-top: 10px; color: #8e8e93; font-size: 13px; }
 code  { background: #f2f2f7; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
 a { color: #007aff; text-decoration: none; }
+
+/* Package artwork, shown above the title. Sized in the markup too, so it does
+   not reflow while loading on a slow connection. */
+.hero {
+    display: block;
+    width: 120px; height: 120px;
+    margin: 0 0 12px;
+    border-radius: 14px;
+}
