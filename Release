@@ -1,0 +1,8 @@
+Origin: kern0x1b-tweaks
+Label: kern0x1b's tweaks
+Suite: stable
+Version: 1.0
+Codename: legacy-ios
+Architectures: iphoneos-arm
+Components: main
+Description: MobileSubstrate tweaks for jailbroken legacy iOS devices (iOS 6+), fixing compatibility issues with modern backends.
