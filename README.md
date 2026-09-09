@@ -21,7 +21,7 @@ https://kern0x1b.github.io/cydia/
 
 | Package | Source repo | Fixes |
 |---|---|---|
-| `space.kern0x1b.kindlesyncfix` — Kindle Whispersync Fix | [kindle-sync-fix](https://github.com/kern0x1b/kindle-sync-fix) | Amazon Kindle app sync failing with 417 Expectation Failed |
+| `space.kern0x1b.kindlesyncfix` — Kindle Whispersync Fix (unofficial) | [kindle-sync-fix](https://github.com/kern0x1b/kindle-sync-fix) | The Kindle app's sync failing with 417 Expectation Failed |
 | `space.kern0x1b.soundcloudfix` — SoundCloud iOS 6 Fix | [soundcloud-fix](https://github.com/kern0x1b/soundcloud-fix) (private) | SoundCloud 2.7.2 broken by the v1 API deprecation and dead password OAuth grant |
 
 ## Repo layout
