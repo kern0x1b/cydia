@@ -17,10 +17,11 @@ Cydia → Sources → Edit → Add:
 https://kern0x1b.github.io/cydia/
 ```
 
-## Published tweaks
+## Published packages
 
-| Package | Source repo | Fixes |
+| Package | Source repo | What it fixes / does |
 |---|---|---|
+| `com.kern0x1b.telegram` — Classicgram (unofficial Telegram client) | [classicgram](https://github.com/kern0x1b/classicgram) | A current Telegram client for the 32-bit armv7 iPhones and iPads on iOS 6 that Telegram itself dropped |
 | `space.kern0x1b.kindlesyncfix` — Kindle Whispersync Fix (unofficial) | [kindle-sync-fix](https://github.com/kern0x1b/kindle-sync-fix) | The Kindle app's sync failing with 417 Expectation Failed |
 | `space.kern0x1b.soundcloudfix` — SoundCloud iOS 6 Fix | [soundcloud-fix](https://github.com/kern0x1b/soundcloud-fix) (private) | SoundCloud 2.7.2 broken by the v1 API deprecation and dead password OAuth grant |
 
