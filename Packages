@@ -1,16 +1,16 @@
 Package: com.kern0x1b.telegram
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: kern0x1b
-Installed-Size: 121188
+Installed-Size: 121224
 Depends: firmware (>= 6.0)
-Filename: debs/com.kern0x1b.telegram_1.0_iphoneos-arm.deb
-Size: 30484018
-MD5sum: fa37aeda3776e45bb177346c3c3661b8
-SHA1: 9e57e7bcf698b1f0d6e825fc9237206b8331eb5a
-SHA256: d0307a21ce25cc574bd4390ba19eb7c1bb2eac864d2604f7785a4b3f9fa90590
+Filename: debs/com.kern0x1b.telegram_1.0.1_iphoneos-arm.deb
+Size: 30506730
+MD5sum: b30ba1777cdc53116c6fbe61b5d3f934
+SHA1: 21f63dac7f58275800b8ba7b239b96c3ba02405d
+SHA256: 282f05ffafa5edaa1f898ff64d20ce031f0994c16d81b9f6a511832d01a16d9d
 Section: Social
-Homepage: https://github.com/kern0x1b/telegram-classic
+Homepage: https://github.com/kern0x1b/classicgram
 Description: An unofficial Telegram client for 32-bit armv7 iPhones and iPads on iOS 6, wearing the 2013 interface. Uses the Telegram API and is part of the Telegram ecosystem; not affiliated with or endorsed by Telegram FZ-LLC.
 Author: kern0x1b
 Depiction: https://kern0x1b.github.io/cydia/depictions/classicgram.html
