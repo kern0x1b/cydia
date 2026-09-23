@@ -13,6 +13,8 @@ branch; `.nojekyll` at the root exists so Pages serves `Packages.bz2`,
 No device is touched from this repo — `publish.sh` is the only script here
 and it only reads/writes local files.
 
+Workspace-wide procedures are skills in `$HOME/Git/projects/ios/.agents/skills/`: `device-session` (claim, run, install, launch, tap on a real device), `canon-install`, `patch-merge`, `worktree-sweep`, `session-handoff`, `band-launch`, `band-supervise`. A session started inside this repository does not list them — read `<name>/SKILL.md` there.
+
 ## Layout
 
 | Path | What decides it |
@@ -21,7 +23,7 @@ and it only reads/writes local files.
 | `Packages`, `Packages.gz`, `Packages.bz2` | **generated** by `publish.sh` from `debs/` — never hand-edit |
 | `Release` | metadata header is hand-written; the `MD5Sum`/`SHA1`/`SHA256` blocks below it are **generated** — never hand-edit |
 | `depictions/*.html` | per-package pages Cydia shows instead of plain text; hand-written, one per package that sets `Depiction:` |
-| `icons/` | per-package icons served over HTTP, one per package, hand-placed |
+| `icons/` | per-package icons served over HTTP, hand-placed; names follow each control file's `Icon:` URL (a package may point at `CydiaIcon.png` instead) |
 | `assets/` | full-size source artwork the small icons are scaled from |
 | `CydiaIcon.png` | repo icon — must be exactly this name, 64x64, at the root |
 | `publish.sh` | the only script here; rebuilds every generated file above |
@@ -33,7 +35,8 @@ Reindex what's already in `debs/`:
 ./publish.sh
 ```
 
-Copy a newly-built `.deb` in and reindex:
+Copy a newly-built `.deb` in and reindex (`build.sh` repos write `dist/`,
+charon/xmake repos write `build/`):
 ```
 ./publish.sh <tweak-repo>/dist/*.deb
 ```
