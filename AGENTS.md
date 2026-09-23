@@ -46,7 +46,7 @@ rewrites the checksum blocks in `Release`. It requires `dpkg-scanpackages`,
 
 For the full publish procedure — building the deb in its own repo, updating
 the README table and a depiction page, committing — see the
-`publish-tweak` skill (`.agent/skills/publish-tweak/SKILL.md`).
+`publish-tweak` skill (`.agents/skills/publish-tweak/SKILL.md`).
 
 ## Conventions
 
