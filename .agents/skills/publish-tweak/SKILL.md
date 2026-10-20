@@ -9,7 +9,7 @@ description: Publish a new or updated tweak .deb to this Cydia repo — copy it 
    README). This repo never builds tweak source — it only distributes
    already-built `.deb`s. Where the `.deb` lands depends on the repo:
    - `build.sh` repos write `dist/`;
-   - charon/xmake repos write `build/` (`xmake deb`; `xmake deb -o DIR`
+   - revenant/xmake repos write `build/` (`xmake deb`; `xmake deb -o DIR`
      writes to `DIR` instead).
 
 2. From this repo's root, copy the deb in and reindex in one step:

@@ -36,7 +36,7 @@ Reindex what's already in `debs/`:
 ```
 
 Copy a newly-built `.deb` in and reindex (`build.sh` repos write `dist/`,
-charon/xmake repos write `build/`):
+revenant/xmake repos write `build/`):
 ```
 ./publish.sh <tweak-repo>/dist/*.deb
 ```
