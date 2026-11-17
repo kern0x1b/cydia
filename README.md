@@ -28,7 +28,7 @@ https://kern0x1b.github.io/cydia/
 ## Repo layout
 
 ```
-publish.sh               rebuilds every index below from debs/
+tools/publish.lua        rebuilds every index below from debs/
 Packages                 dpkg-scanpackages index over debs/
 Packages.gz/.bz2         the same index, compressed — clients fetch these
 Release                  repo metadata + checksums of the three index files
@@ -48,10 +48,10 @@ package rather than only the newest.
 1. Build the `.deb` in the tweak's own repo (see that repo's README).
 2. From here:
    ```
-   ./publish.sh <tweak-repo>/dist/*.deb
+   xmake l tools/publish.lua <tweak-repo>/dist/*.deb
    git add -A && git commit -m "Publish <tweak-name> <version>" && git push
    ```
-   `publish.sh` copies the `.deb` in, rebuilds `Packages`, `Packages.gz`,
+   `tools/publish.lua` copies the `.deb` in, rebuilds `Packages`, `Packages.gz`,
    `Packages.bz2` and the checksum block in `Release`, then prints what it
    indexed. Run it with no arguments to just reindex what is already in `debs/`.
 3. Add a row to the table above, and a page under `depictions/` if the package
